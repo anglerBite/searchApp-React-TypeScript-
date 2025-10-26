@@ -3,7 +3,7 @@
 ・検索アプリ（React × TypeScript）README
 
 このリポジトリは、入力テキストで配列を絞り込む最小構成の検索アプリです。
-初心者でも読みやすいように、責務の分離・純粋配列・純粋関数という観点で実装を説明します。
+責務の分離・純粋配列・純粋関数という観点で実装を説明します。
 
 ⸻
 
@@ -18,11 +18,7 @@
 ・動かし方
 
 	1.	依存インストール
-npm i
-# or
-pnpm i
-# or
-yarn
+npm i or pnpm i or yarn
 
 	2.	開発サーバー起動
 npm run dev
@@ -52,7 +48,7 @@ src/
 	•	SearchBar.tsx
 	•	表示と入力だけを担当
 	•	onChange で親から渡された setText を呼ぶ（副作用は持たない）
-  
+
 	•	ItemList.tsx
 	•	受け取った配列を表示するだけ
 	•	空配列なら「No items found」を出す（UI責務）# searchApp-React-TypeScript-
